@@ -20,6 +20,6 @@ export default function Home() {
       <FaqContactSection {...faqData} />
       <Companylogo />
       <Location />
-   </>
+    </>
   );
 }

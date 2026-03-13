@@ -56,7 +56,7 @@ function Header() {
                             style={{ backgroundImage: `url(${slide.image})` }}
                         >
                             <div className="w-full h-full bg-black/50 flex items-center">
-                                <div className="max-w-6xl min-lg:w-[100%] mx-auto px-6 text-white">
+                                <div className="max-w-6xl min-lg:w-[100%] mx-auto text-white">
                                     <h1 className="text-3xl md:text-5xl font-bold mb-4">
                                         {slide.title}
                                     </h1>

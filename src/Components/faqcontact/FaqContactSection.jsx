@@ -13,7 +13,7 @@ export default function FaqContactSection({
 
   return (
     <section className="py-16 px-4 md:px-10 bg-gray-100">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="max-w-7xl mx-auto px-7 grid grid-cols-1 lg:grid-cols-2 gap-10">
         
         {/* FAQ */}
         <div>

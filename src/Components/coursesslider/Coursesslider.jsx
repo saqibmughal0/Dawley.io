@@ -9,83 +9,92 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
-function Coursesslider({ title, subtitle, description, courses, bgColor = "bg-white", }) {
+function Coursesslider({ title, subtitle, description, courses }) {
     return (
-        <>
-            <section className={`w-full py-20 max-sm:py-10 flex flex-col items-center space-y-8 ${bgColor}`}>
+        <section className="w-full py-20 max-sm:py-10 bg-gray-50">
 
-                {/* Heading */}
-                <div className="text-center space-y-2">
-                    <h5>{subtitle}</h5>
-                    <h1 className="text-4xl font-bold">{title}</h1>
-                    <p>{description}</p>
-                </div>
+            {/* Heading */}
+            <div className="text-center space-y-2 mb-10">
+                <h5 className="text-indigo-600 font-semibold">{subtitle}</h5>
+                <h2 className="text-4xl font-bold">{title}</h2>
+                <p className="text-gray-600">{description}</p>
+            </div>
 
-                {/* Slider */}
-                <Carousel
-                    opts={{
-                        loop: true,
-                        align: "start",
-                    }}
-                    className="w-full max-w-6xl"
-                >
-                    <CarouselContent className="ml-2 md:-ml-4">
+            {/* Slider */}
+            <Carousel opts={{ align: "start", loop: true }} className="max-w-7xl mx-auto px-7">
+                <CarouselContent>
 
-                        {courses.map((course, index) => (
-                            <CarouselItem
-                                key={index}
-                                className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3"
-                            >
-                                <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    {courses.map((course, index) => (
+                        <CarouselItem
+                            key={index}
+                            className="basis-full md:basis-1/2 lg:basis-1/3"
+                        >
+                            <div className="bg-white rounded-2xl overflow-hidden">
 
-                                    {/* Image */}
-                                    <div className="relative w-full h-56">
-                                        <Image
-                                            src={course.image}
-                                            alt={course.title}
-                                            fill
-                                            className="object-contain"
-                                        />
-
-                                        <div className="absolute top-3 left-3 bg-white px-3 py-1 rounded-md shadow text-sm font-semibold">
-                                            {course.institute}
-                                        </div>
-
-                                        <div className="absolute top-3 right-3 flex gap-2">
-                                            {course.tools.map((tool, i) => (
-                                                <span
-                                                    key={i}
-                                                    className="bg-[#e7000b] text-white text-xs px-2 py-1 rounded"
-                                                >
-                                                    {tool}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-
-                                    {/* Content */}
-                                    <div className="p-5 text-center">
-                                        <h3 className="text-xl font-bold text-gray-900">
-                                            {course.title}
-                                        </h3>
-                                    </div>
-
-                                    {/* Button */}
-                                    <div className="bg-indigo-900">
-                                        <button className="w-full text-white font-semibold py-3 hover:bg-indigo-800 transition">
-                                            Enroll Now →
-                                        </button>
-                                    </div>
-
+                                {/* Image */}
+                                <div className="relative h-52 bg-gray-100">
+                                    <Image
+                                        src={course.image}
+                                        alt={course.title}
+                                        fill
+                                    />
                                 </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                </Carousel>
-            </section>
-        </>
+
+                                {/* Content */}
+                                <div className="p-5 space-y-3">
+
+                                    {/* Title */}
+                                    <h3 className="font-bold text-lg leading-snug">
+                                        {course.title}
+                                    </h3>
+
+                                    {/* Subtitle */}
+                                    <p className="text-sm text-gray-600">
+                                        {course.subtitle}
+                                    </p>
+
+                                    {/* Meta */}
+                                    <div className="flex items-center gap-3 flex-wrap text-sm">
+                                        <span className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded font-semibold">
+                                            Bestseller
+                                        </span>
+
+                                        <span className="flex items-center gap-1">
+                                            ⭐ <strong>4.6</strong>
+                                        </span>
+
+                                        <span className="text-gray-500">
+                                            (13,834 ratings)
+                                        </span>
+                                    </div>
+
+                                    {/* Duration */}
+                                    <div className="inline-flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full text-sm">
+                                        ⏱ Duration: 6 weeks
+                                    </div>
+                                </div>
+
+                                {/* Footer */}
+                                <div className="px-5 pb-5 flex justify-between items-center">
+                                    <span className="text-indigo-700 font-semibold cursor-pointer">
+                                        Read More →
+                                    </span>
+
+                                    <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                                        Enroll Now
+                                    </button>
+                                </div>
+
+                            </div>
+                        </CarouselItem>
+                    ))}
+
+                </CarouselContent>
+
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+        </section>
     )
 }
 

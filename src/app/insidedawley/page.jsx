@@ -1,13 +1,18 @@
-import Aboutdawley from '@/Components/about/aboutdawley/Aboutdawley'
-import Aboutheader from '@/Components/about/aboutheader/Aboutheader'
 import React from 'react'
+import Insideheader from '@/Components/about/Insideheader'
+import Missionvision from '@/Components/about/Missionvision'
+import Aboutdawley from '@/Components/about/Aboutdawley'
+import Ceodawley from '@/Components/about/Ceodawley'
+
 
 function page() {
   return (
-    <div>
-      <Aboutheader/>
-      <Aboutdawley />
-    </div>
+    <>
+   <Insideheader />
+   <Aboutdawley />
+   <Missionvision />
+   <Ceodawley />
+    </>
   )
 }
 

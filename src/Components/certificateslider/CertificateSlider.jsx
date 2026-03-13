@@ -11,7 +11,7 @@ import {
 
 export default function CertificateSlider({ title, subtitle, description, certificates, bgColor = "bg-white" }) {
   return (
-    <section className={`w-full py-16 max-sm:py-10 space-y-8 ${bgColor}`}>
+    <section className={`w-full py-16 px-7 max-sm:py-10 space-y-8 ${bgColor}`}>
       {/* Heading */}
       <div className="text-center space-y-2 ">
         <h5>{subtitle}</h5>
@@ -23,9 +23,9 @@ export default function CertificateSlider({ title, subtitle, description, certif
           loop: true,
           align: "start",
         }}
-        className="w-full max-w-7xl mx-auto"
+        className="w-full max-w-7xl mx-auto px-7"
       >
-        <CarouselContent className="ml-0 p-2">
+        <CarouselContent>
 
           {certificates.map((img, index) => (
             <CarouselItem

@@ -4,7 +4,7 @@ import React from 'react'
 function Companylogo() {
     return (
         <>
-            <section className='w-full h-[300px] flex flex-wrap justify-evenly items-center'>
+            <section className='w-full h-[300px] px-20 flex flex-wrap justify-evenly items-center'>
                 <Image
                     src="/images/companys logo/images.webp" // apni image yahan rakhein
                     alt="NavTech Logo"
