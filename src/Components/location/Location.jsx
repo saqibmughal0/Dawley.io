@@ -6,12 +6,7 @@ import { MapPin } from "lucide-react"
 
 export default function Location() {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
-
-      {/* Background gradient blobs */}
-       <div className="absolute top-0 left-0 w-72 h-72 bg-red-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-            <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-0 left-1/2 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    <section className="relative pb-10 overflow-hidden">
             
       <div className="relative max-w-7xl mx-auto px-6">
 

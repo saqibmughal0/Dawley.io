@@ -296,3 +296,18 @@ body {
 .animation-delay-2000 {
   animation-delay: 2s;
 }
+
+.swiper-pagination {
+  position: relative !important;  /* 👈 ab images ke neeche ayegi */
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1;
+}

@@ -44,7 +44,7 @@ function Header() {
     };
     return (
         <>
-            <section className="relative w-full h-[70vh] md:h-[50vh] overflow-hidden">
+            <section className="relative w-full h-[70vh] md:h-[70vh] overflow-hidden">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
@@ -56,7 +56,7 @@ function Header() {
                             style={{ backgroundImage: `url(${slide.image})` }}
                         >
                             <div className="w-full h-full bg-black/50 flex items-center">
-                                <div className="max-w-6xl min-lg:w-[100%] mx-auto text-white">
+                                <div className="max-w-7xl min-lg:w-[100%] mx-auto text-white">
                                     <h1 className="text-3xl md:text-5xl font-bold mb-4">
                                         {slide.title}
                                     </h1>

@@ -44,7 +44,7 @@ function Navbar() {
         <>
             {/* ================= TOP BAR ================= */}
             <div className="bg-[#0b0b1f] text-white text-sm max-sm:hidden">
-                <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+                <div className="max-w-[95%] mx-auto flex justify-between items-center px-4 py-2">
                     <div className="flex gap-6">
                         <span className="flex items-center gap-2">
                             <FaEnvelope /> info@dawley.io
@@ -71,7 +71,7 @@ function Navbar() {
 
             {/* ================= MAIN NAVBAR ================= */}
             <nav className="bg-white shadow">
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-[95%] mx-auto px-4">
                     <div className="flex justify-between items-center h-20">
                         {/* LOGO */}
                         <Link href="/">
@@ -92,7 +92,9 @@ function Navbar() {
                             </Link>
                             <Link href="/itcourses" className={isActive("/itcourses")}>IT Courses</Link>
                             <Link href="/navttccourses" className={isActive("/navttccourses")}>NAVTTC Courses</Link>
-
+                            <Link href="#" className={isActive("")}>
+                               Dawley School
+                            </Link>
                             <a
                                 href="https://ielts.dawley.io"
                                 target="_blank"
@@ -101,8 +103,17 @@ function Navbar() {
                             >
                                 IELTS
                             </a>
+                            <a
+                                href="https://dawleybiz.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-700 hover:text-red-600"
+                            >
+                                Test Center
+                            </a>
 
                             <Link href="/faculty" className={isActive("/faculty")}>Faculty</Link>
+                            <Link href="" className={isActive("")}>Tech Services</Link>
                             {/* <Link href="/vlogs" className={isActive("/vlogs")}>Vlogs</Link> */}
                             <Link href="/contact" className={isActive("/contact")}>Contact Us</Link>
                         </div>

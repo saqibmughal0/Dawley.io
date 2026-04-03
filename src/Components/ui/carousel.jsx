@@ -156,7 +156,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn("absolute size-8 rounded-full", orientation === "horizontal"
-        ? "top-1/2 -left-12 -translate-y-1/2"
+        ? "top-1/2 -left-10 -translate-y-1/2"
         : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
@@ -185,7 +185,7 @@ function CarouselNext({
         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
-      {...props}>
+      {...props}> 
       <ArrowRight />
       <span className="sr-only">Next slide</span>
     </Button>

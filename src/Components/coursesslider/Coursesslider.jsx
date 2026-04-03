@@ -55,7 +55,7 @@ function Coursesslider({ title, subtitle, description, courses }) {
 
                                     {/* Meta */}
                                     <div className="flex items-center gap-3 flex-wrap text-sm">
-                                        <span className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded font-semibold">
+                                        <span className="bg-[#242e5f] text-white px-2 py-1 rounded font-semibold">
                                             Bestseller
                                         </span>
 
@@ -76,11 +76,11 @@ function Coursesslider({ title, subtitle, description, courses }) {
 
                                 {/* Footer */}
                                 <div className="px-5 pb-5 flex justify-between items-center">
-                                    <span className="text-indigo-700 font-semibold cursor-pointer">
+                                    <span className="text-[#e7000b] font-semibold cursor-pointer">
                                         Read More →
                                     </span>
 
-                                    <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                                    <button className="bg-[#242e5f] text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
                                         Enroll Now
                                     </button>
                                 </div>

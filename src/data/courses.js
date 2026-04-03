@@ -220,7 +220,7 @@ export const courses = {
   },
 
   "web-development": {
-    slug: "web-development",
+    slug: "   ",
     title: "Best AI Web Development",
     heroImage: "/images/short courses images/wordpress-banner.jpg",
     sidebarImage: "/images/short courses images/Wordpress.webp",
