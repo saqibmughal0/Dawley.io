@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
-import Navbar from "@/Components/navbar/Navbar";
-import Footer from "@/Components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 import Script from "next/script";
 
 import ReduxProvider from "@/store/ReduxProvider";

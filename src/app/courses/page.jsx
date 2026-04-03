@@ -1,4 +1,4 @@
-import CourseDetailLayout from "@/Components/course/CourseDetailLayout"
+import CourseDetailLayout from "@/components/course/CourseDetailLayout"
 import { courses } from "@/data/courses"
 
 

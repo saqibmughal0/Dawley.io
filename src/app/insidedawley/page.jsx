@@ -1,8 +1,8 @@
 import React from 'react'
-import Insideheader from '@/Components/about/Insideheader'
-import Missionvision from '@/Components/about/Missionvision'
-import Aboutdawley from '@/Components/about/Aboutdawley'
-import Ceodawley from '@/Components/about/Ceodawley'
+import Insideheader from '@/components/about/Insideheader'
+import Missionvision from '@/components/about/Missionvision'
+import Aboutdawley from '@/components/about/Aboutdawley'
+import Ceodawley from '@/components/about/Ceodawley'
 
 
 function page() {

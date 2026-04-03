@@ -1,5 +1,5 @@
-import News from '@/Components/vlogs/News'
-import Vlogs from '@/Components/vlogs/Vlogs'
+import News from '@/components/vlogs/News'
+import Vlogs from '@/components/vlogs/Vlogs'
 import React from 'react'
 
 function page() {

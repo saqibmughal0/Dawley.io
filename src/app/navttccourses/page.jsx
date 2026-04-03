@@ -1,4 +1,4 @@
-import Navtechcourses from '@/Components/navtechcourses/Navtechcourses'
+import Navtechcourses from '@/components/navtechcourses/Navtechcourses'
 import React from 'react'
 
 function page() {

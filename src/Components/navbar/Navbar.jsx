@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "@/store/cartSlice";
-import CartSidebar from "@/Components/cart/CartSidebar";
+import CartSidebar from "@/components/cart/CartSidebar";
 
 
 import {

@@ -1,5 +1,5 @@
 "use client"
-import Enrollform from '@/Components/forms/Enrollform'
+import Enrollform from '@/components/forms/Enrollform'
 
 function page() {
   return (

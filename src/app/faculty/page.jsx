@@ -1,7 +1,7 @@
-import Administrative from '@/Components/faculty/Administrative'
-import Directory from '@/Components/faculty/Directory'
-import Facultyheader from '@/Components/faculty/Facultyheader'
-import Leadership from '@/Components/faculty/Leadership'
+import Administrative from '@/components/faculty/Administrative'
+import Directory from '@/components/faculty/Directory'
+import Facultyheader from '@/components/faculty/Facultyheader'
+import Leadership from '@/components/faculty/Leadership'
 import React from 'react'
 
 function page() {
